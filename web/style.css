@@ -63,17 +63,39 @@
   background-color: lightgoldenrodyellow;
   box-shadow: none;
 }
+#pokemonAnalyzer #toolBox #redo-undoBox img.disabled {
+  box-shadow: none;
+  background-color: gray;
+  cursor: not-allowed;
+}
 #pokemonAnalyzer #toolBox #boldBox {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
   display: flex;
+  justify-content: space-around;
+}
+#pokemonAnalyzer #toolBox #boldBox #boldText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
 }
 #pokemonAnalyzer #toolBox #boldBox #boldChanger {
   display: block;
+  width: 60%;
 }
 #pokemonAnalyzer #toolBox #boldBox #boldSampleBox {
+  width: 20%;
   max-width: 50px;
   aspect-ratio: 1/1;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#pokemonAnalyzer #toolBox #boldBox #boldSampleBox #boldSample {
+  border-radius: 50%;
+  background-color: white;
 }
