@@ -25,6 +25,20 @@
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#pokemonAnalyzer #toolBox #colorBoxes div {
+  width: 25px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 2px gray solid;
+  margin: 5px;
+  cursor: pointer;
+}
+#pokemonAnalyzer #toolBox #colorBoxes div.selected {
+  width: 35px;
 }
 #pokemonAnalyzer #toolBox #redo-undoBox {
   grid-column-start: 2;
@@ -33,6 +47,7 @@
   grid-row-end: 2;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 #pokemonAnalyzer #toolBox #redo-undoBox img {
   display: block;
