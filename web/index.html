@@ -8,13 +8,13 @@
 </head>
 <body>
 	<div id="pokemonAnalyzer">
-		<canvas id="canvas"></canvas>
+		<canvas id="canvas" width="100" height="100"></canvas>
 		<div id="toolBox">
 			<div id="colorBoxes"></div>
 			<div id="redo-undoBox">
-				<img src="img/undo.png" alt="undo" />
+				<img id="undo" src="img/undo.png" alt="undo" />
 				<button id="eraseAll">全部消す</button>
-				<img src="img/redo.png" alt="redo" />
+				<img id="redo" src="img/redo.png" alt="redo" />
 			</div>
 			<div id="boldBox">
 				<input id="boldChanger" type="range" min="1" max="10" step="1" />
