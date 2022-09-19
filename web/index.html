@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>pokemonAnalyzer</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="pokemonAnalyzer">
+		<canvas id="canvas"></canvas>
+		<div id="toolBox">
+			<div id="colorBoxes"></div>
+			<div id="redo-undoBox">
+				<img src="img/undo.png" alt="undo" />
+				<button id="eraseAll">全部消す</button>
+				<img src="img/redo.png" alt="redo" />
+			</div>
+			<div id="boldBox">
+				<input id="boldChanger" type="range" min="1" max="10" step="1" />
+				<div id="boldSampleBox"><div id="boldSample"></div></div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" charset="utf-8" src="functional.js"></script>
+	<script type="text/javascript" charset="utf-8" src="script.js"></script>
+</body>
+</html>
