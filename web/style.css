@@ -1,0 +1,101 @@
+#pokemonAnalyzer {
+  margin: 50px auto;
+  max-width: 1200px;
+}
+#pokemonAnalyzer #canvas {
+  display: block;
+  border: 1px black solid;
+  width: 100%;
+  max-width: 500px;
+  margin: 25px auto;
+  aspect-ratio: 1/1;
+}
+#pokemonAnalyzer #toolBox {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-column: 2fr 1fr;
+  max-width: 700px;
+  margin: 25px auto;
+  padding: 25px;
+  border: 1px black solid;
+  background-color: azure;
+}
+#pokemonAnalyzer #toolBox #colorBoxes {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#pokemonAnalyzer #toolBox #colorBoxes div {
+  width: 25px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 2px gray solid;
+  margin: 5px;
+  cursor: pointer;
+}
+#pokemonAnalyzer #toolBox #colorBoxes div.selected {
+  width: 35px;
+}
+#pokemonAnalyzer #toolBox #redo-undoBox {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#pokemonAnalyzer #toolBox #redo-undoBox img {
+  display: block;
+  position: relative;
+  width: 30px;
+  border: 1px black solid;
+  border-radius: 20%;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 1px 1px gray;
+  cursor: pointer;
+}
+#pokemonAnalyzer #toolBox #redo-undoBox img:hover {
+  background-color: lightgoldenrodyellow;
+  box-shadow: none;
+}
+#pokemonAnalyzer #toolBox #redo-undoBox img.disabled {
+  box-shadow: none;
+  background-color: gray;
+  cursor: not-allowed;
+}
+#pokemonAnalyzer #toolBox #boldBox {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: flex;
+  justify-content: space-around;
+}
+#pokemonAnalyzer #toolBox #boldBox #boldText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+#pokemonAnalyzer #toolBox #boldBox #boldChanger {
+  display: block;
+  width: 60%;
+}
+#pokemonAnalyzer #toolBox #boldBox #boldSampleBox {
+  width: 20%;
+  max-width: 50px;
+  aspect-ratio: 1/1;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#pokemonAnalyzer #toolBox #boldBox #boldSampleBox #boldSample {
+  border-radius: 50%;
+  background-color: white;
+}
